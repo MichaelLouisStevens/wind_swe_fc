@@ -8,7 +8,9 @@
 > idl
 
 > resolve_routine,'make_spec_file',/compile_full_file
+
 > make_spec_file, lzfile = '/{lz_file_path}/WI_LZ_SWE_{YYYYMMDD}_V{VV}.DAT' ; decommutate lz file. If no file provided, will launch dialogue
 
 > resolve_routine,'restspec_mra',/compile_full_file
+
 > restspec_mra, spec, file = '/{decommed_file_path}/ionspec{YYYYMMDD}.idl'; load decommed spectrum file, applies calibrations and converts to physics units. Data are loaded into the idl structure variable "spec"
